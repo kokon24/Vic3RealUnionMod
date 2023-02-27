@@ -1,0 +1,5 @@
+# AI = {
+# 	c:POL = {
+# 		set_strategy = ai_strategy_independence_150
+# 	}
+# }

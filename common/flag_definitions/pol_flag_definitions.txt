@@ -1,0 +1,11 @@
+POL = {
+	flag_definition = {
+		coa = POL_subject_RUS
+		allow_overlord_canton = no
+		subject_canton = POL
+		priority = 30
+		trigger = { 
+			coa_def_russian_ensign_trigger = yes
+		}
+	}
+}

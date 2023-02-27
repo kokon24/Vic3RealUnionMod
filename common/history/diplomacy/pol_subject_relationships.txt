@@ -1,0 +1,15 @@
+﻿DIPLOMACY = {
+    c:POL = {
+        set_relations = { country = c:RUS value = -30 }
+        set_relations = { country = c:PRU value = -30 }
+		set_relations = { country = c:AUS value = -30 }
+        create_truce = { country = c:RUS months = 36 }
+    }
+
+	c:RUS = {
+		create_diplomatic_pact = {
+   			country = c:POL
+   			type = real_union
+       	}
+	}
+}

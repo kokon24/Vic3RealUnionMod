@@ -1,0 +1,3 @@
+colors = {
+    congress_polland_blue = hsv360 	{	220	100	65	}
+}
