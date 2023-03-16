@@ -1,0 +1,66 @@
+﻿strong_independence_movement_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	#country_legitimacy_base_add = -10
+	country_legitimacy_headofstate_add = -20
+	#interest_group_ig_armed_forces_approval_add = -2
+	interest_group_ig_landowners_approval_add= -2
+	#interest_group_ig_devout_approval_add= -1
+	#state_turmoil_effects_mult = 0.05
+	#country_authority_add = -100
+	country_authority_mult = -0.2
+	#state_turmoil_effects_mult = 0.2
+	#state_turmoil_effects_mult = 0.05
+	#state_radicals_from_sol_change_mult = -0.05
+	state_expected_sol_from_literacy=1
+	#state_rich_expected_sol=16
+	state_pop_support_law_monarchy_mult = -0.3
+}
+
+real_union_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_influence_mult = -0.5
+	#country_minting_mult = -0.2
+	country_minting_add = -400
+	#interest_group_ig_landowners_pol_str_mult = -0.05
+}
+
+real_union_law_is_forbidden = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_law_enactment_success_add = -1
+	country_cannot_enact_laws = yes
+	
+}
+
+# universities_are_forbidden = {
+# 	c:POL = {
+# 		deactivate_building = building_university
+# 	}
+# }
+
+real_union_law_enactment_overlord_informed = {
+	
+}
+
+# modifier = {
+# 	country_legitimacy_headofstate_add = 10
+# 	country_legitimacy_govt_total_clout_add = 120
+# 	country_legitimacy_govt_size_add = 2
+# 	country_legitimacy_ideological_incoherence_mult = -0.1
+# 	country_aristocrats_pol_str_mult = 0.5
+# 	country_capitalists_pol_str_mult = 0.25
+# 	country_authority_add = 100
+# }
+
+# grant_poland_independence= {
+# 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+# 	interest_group_ig_intelligentsia_approval_add = 10
+# 	interest_group_ig_landowners_approval_add = -10
+# state_turmoil_effects_mult = 0.25
+# 	state_radicals_from_sol_change_mult = 0.25
+# interest_group_ig_armed_forces_approval_add = -10
+# country_radicals_from_conquest_mult = -0.25
+# country_authority_add = -100
+# country_prestige_mult = -0.2
+# 	country_influence_add = 100
+# country_legitimacy_base_add = -5
+# }

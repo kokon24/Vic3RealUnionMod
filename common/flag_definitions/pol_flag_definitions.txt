@@ -1,4 +1,4 @@
-POL = {
+﻿POL = {
 	flag_definition = {
 		coa = POL_subject_RUS
 		allow_overlord_canton = no

@@ -1,0 +1,1 @@
+﻿#WAR_GOAL_MAKE_REAL_UNION_SUBJECT_TYPE = "subject_type_real_union"

@@ -1,0 +1,19 @@
+﻿# dp_make_real_union = {
+# 	war_goal = make_real_union
+	
+# 	texture = "gfx/interface/icons/war_goals/make_puppet.dds"
+	
+# 	possible = {	
+# 		aggressive_diplomatic_plays_permitted = yes		
+# 		custom_tooltip = {
+# 			text = DIPLO_ACTION_RELATIONS_CORDIAL_OR_GREATER_NOT
+# 			scope:target_country.relations:root < relations_threshold:cordial
+# 		}			
+# 	}
+	
+# 	on_weekly_pulse = {}
+	
+# 	on_war_begins = {}
+
+# 	on_war_end = {}
+# }

@@ -1,0 +1,102 @@
+﻿PRODUCTION_METHODS = {
+s:STATE_INGRIA={
+	region_state:RUS={
+		activate_production_method = {
+		building_type = building_urban_center
+		production_method = pm_gas_streetlights
+		}
+	}
+ }
+
+ s:STATE_BRANDENBURG={
+	region_state:PRU={
+		activate_production_method = {
+		building_type = building_urban_center
+		production_method = pm_gas_streetlights
+		}
+	}
+ }
+
+s:STATE_ILE_DE_FRANCE={
+	region_state:FRA={
+		activate_production_method = {
+		building_type = building_urban_center
+		production_method = pm_gas_streetlights
+		}
+	}
+ }
+
+ s:STATE_AUSTRIA={
+	region_state:AUS={
+		activate_production_method = {
+		building_type = building_urban_center
+		production_method = pm_gas_streetlights
+		}
+	}
+ }
+}
+
+# 	s:STATE_BRANDENBURG = {
+# 		any_scope_building = {
+# 			activate_production_method = {
+# 				building_type = building_urban_center
+# 				production_method = pm_gas_streetlights
+# 			}
+# 		}
+# 	}
+# }
+
+
+# s:STATE_INGRIA={
+# 	region_state:RUS={
+# 		create_building={
+# 			building="building_government_administration"
+# 			level=10
+# 			reserves=1
+# 			activate_production_methods={ "pm_horizontal_drawer_cabinets", "pm_gas_streetlights" }
+			
+# 		}
+# 		create_building={
+# 			building="building_construction_sector"
+# 			level=2
+# 			reserves=1
+# 			activate_production_methods={ "pm_wooden_buildings" }
+# 		}			
+# 		create_building={
+# 			building="building_textile_mills"
+# 			level=4
+# 			reserves=1
+# 			activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" "pm_merchant_guilds_building_textile_mills" }
+# 		}
+# 		create_building={
+# 			building="building_glassworks"
+# 			level=3
+# 			reserves=1
+# 			activate_production_methods={ "pm_forest_glass" "pm_merchant_guilds_building_glassworks" "pm_manual_glassblowing" "pm_ceramics" }
+# 		}
+# 		create_building={
+# 			building="building_arts_academy"
+# 			level=2
+# 			reserves=1
+# 			activate_production_methods={ "pm_traditional_art" }
+# 		}
+# 		create_building={
+# 			building="building_naval_base"
+# 			level=10
+# 			reserves=1
+# 			activate_production_methods={ "pm_man_o_wars" "pm_frigates" "pm_commerce_raider" "pm_no_naval_theory" }
+# 		}
+# 		create_building={
+# 			building="building_rye_farm"
+# 			level=3
+# 			reserves=1
+# 			activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_potatoes" }
+# 		}
+# 		create_building={
+# 			building="building_port"
+# 			level=3
+# 			reserves=1
+# 			activate_production_methods={ "pm_basic_port" }
+# 		}
+# 	}
+# }

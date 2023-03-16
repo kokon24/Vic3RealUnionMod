@@ -1,0 +1,491 @@
+﻿namespace = real_union_generic_laws
+
+# Advancement event
+#Rousing Speech held - IG leader in favour of current law turns out to be quite the orator. Speech widely distributed, swaying people towards supporting the law
+real_union_generic_laws.1 = {
+	type = country_event
+	placement = root
+	title = real_union_overlord_inquiry
+	desc = real_union_generic_laws_desc
+
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					var:different_law_count = 1
+					NOT = { has_variable = is_friendly_overlord }
+				}
+				desc = real_union_law_rebellion_flavor1
+			}
+			triggered_desc = {
+				trigger = {
+					var:different_law_count = 2
+					NOT = { has_variable = is_friendly_overlord }
+				}
+				desc = real_union_law_rebellion_flavor2
+			}
+			triggered_desc = {
+				trigger = {
+					var:different_law_count = 2
+					has_variable = is_friendly_overlord
+				}
+				desc = real_union_law_rebellion_flavor2friendly
+			}
+			triggered_desc = {
+				trigger = {
+					NOT = { has_variable = is_max_different_law_count }
+					var:different_law_count = 3
+				}
+				desc = real_union_law_rebellion_flavor3friendly
+			}
+			triggered_desc = {
+				desc = real_union_law_rebellion_flavor
+			}
+		}
+	}
+
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	#	#video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	#icon = "gfx/interface/icons/event_icons/event_election.dds"
+	#icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 1
+
+	#cooldown = { months = short_modifier_time }
+
+	trigger = {
+		enacting_any_law = yes
+		#law_enactment_progress < 30
+		has_diplomatic_pact = {
+			type = real_union
+			who = root.top_overlord
+		}
+		is_subject = yes
+		
+		
+		root.top_overlord = {
+			NOT = { has_law = root.currently_enacting_law.type }
+		}
+		# ignore police laws -----
+		#AND = {
+		#	is_ai = yes
+		NOT = { root.currently_enacting_law.type = law_type:law_no_police }
+		NOT = { root.currently_enacting_law.type = law_type:law_local_police }
+		NOT = { root.currently_enacting_law.type = law_type:law_dedicated_police }
+		NOT = { root.currently_enacting_law.type = law_type:law_militarized_police }
+		#}
+		# ------------------------
+		NOT = {
+			has_modifier = real_union_law_is_forbidden
+		}
+		NOT = {
+			has_modifier = real_union_law_enactment_overlord_informed
+		}
+	}
+	immediate = {
+		debug_log="real_union_event generic_laws"
+		if = {
+			limit = {
+				root.top_overlord = {
+					relations:root >= relations_threshold:friendly	
+				}
+			}
+			debug_log="real_union_event is_friendly_overlord yes"
+			set_variable = is_friendly_overlord
+		} else = {
+			debug_log="real_union_event is_friendly_overlord no"
+			remove_variable = is_friendly_overlord
+		}
+
+		set_variable = {
+			name = different_law_count
+			value = 0
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_distribution_of_power.type = root.top_overlord.active_law:lawgroup_distribution_of_power.type }
+			}
+			#debug_log="different lawgroup_distribution_of_power"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_citizenship.type = root.top_overlord.active_law:lawgroup_citizenship.type }
+			}
+			#debug_log="different lawgroup_citizenship"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_church_and_state.type = root.top_overlord.active_law:lawgroup_church_and_state.type }
+			}
+			#debug_log="different lawgroup_church_and_state"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_bureaucracy.type = root.top_overlord.active_law:lawgroup_bureaucracy.type }
+			}
+			debug_log="different lawgroup_bureaucracy"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_army_model.type = root.top_overlord.active_law:lawgroup_army_model.type }
+			}
+			debug_log="different lawgroup_army_model"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_internal_security.type = root.top_overlord.active_law:lawgroup_internal_security.type }
+			}
+			debug_log="different lawgroup_internal_security"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_economic_system.type = root.top_overlord.active_law:lawgroup_economic_system.type }
+			}
+			debug_log="different lawgroup_economic_system"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_trade_policy.type= root.top_overlord.active_law:lawgroup_trade_policy.type }
+			}
+			debug_log="different lawgroup_trade_policy"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_taxation.type = root.top_overlord.active_law:lawgroup_taxation.type }
+			}
+			debug_log="different lawgroup_taxation"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_colonization.type= root.top_overlord.active_law:lawgroup_colonization.type }
+			}
+			debug_log="different lawgroup_colonization"
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		# if = {
+		# 	limit = {
+		# 		NOT = { root.active_law:lawgroup_policing.type= root.top_overlord.active_law:lawgroup_policing.type }
+		# 	}
+		# 	change_variable = {
+		# 		name = different_law_count
+		# 		add = 1
+		# 	}
+		# }
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_education_system.type= root.top_overlord.active_law:lawgroup_education_system.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_health_system.type= root.top_overlord.active_law:lawgroup_health_system.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_free_speech.type= root.top_overlord.active_law:lawgroup_free_speech.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}		
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_labor_rights.type= root.top_overlord.active_law:lawgroup_labor_rights.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_childrens_rights.type= root.top_overlord.active_law:lawgroup_childrens_rights.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_rights_of_women.type= root.top_overlord.active_law:lawgroup_rights_of_women.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_welfare.type= root.top_overlord.active_law:lawgroup_welfare.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_migration.type= root.top_overlord.active_law:lawgroup_migration.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { root.active_law:lawgroup_slavery.type= root.top_overlord.active_law:lawgroup_slavery.type }
+			}
+			change_variable = {
+				name = different_law_count
+				add = 1
+			}
+		}
+
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						NOT = { has_variable = is_friendly_overlord }
+						var:different_law_count >= 3
+					}
+					AND = {
+						has_variable = is_friendly_overlord
+						var:different_law_count >= 4
+					}
+				}
+			}
+			set_variable = is_max_different_law_count
+			debug_log="real_union_event is_max_different_law_count yes"
+			
+		} else = {
+			remove_variable = is_max_different_law_count
+			debug_log="real_union_event is_max_different_law_count no"
+		}
+
+		# help AI a little
+		if = {
+			limit = {
+				has_variable = is_max_different_law_count
+				is_ai = yes
+				NOT = { root.active_law:lawgroup_rights_of_women.type = root.top_overlord.active_law:lawgroup_rights_of_women.type }
+			}	
+			debug_log = "bear trap"
+			remove_variable = is_max_different_law_count
+			
+			activate_law = root.top_overlord.active_law:lawgroup_rights_of_women.type
+			add_radicals = {
+				culture = cu:polish
+				value = 0.05
+			}
+			#deactivate_law = root.active_law:lawgroup_rights_of_women.type
+		}
+
+
+		currently_enacting_law = {
+			save_scope_as = current_law_scope
+		}
+
+	}
+
+
+	cancellation_trigger = {
+		OR = {
+			NOT = { currently_enacting_law = scope:current_law_scope }
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = { has_variable = is_max_different_law_count }
+		}
+
+		ai_chance = {
+			base = 90
+		}
+		name = real_union_law_rebellion.1.a
+		default_option = yes
+		
+
+		add_enactment_modifier = {
+			name = real_union_law_enactment_overlord_informed
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = { has_variable = is_max_different_law_count }
+		}
+		name = real_union_law_rebellion.1.b1
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		add_enactment_modifier = {
+			name = real_union_law_is_forbidden
+		}
+	}
+
+	option = {
+		trigger = {
+			has_variable = is_max_different_law_count
+		}
+		name = real_union_law_rebellion.1.b2
+		
+		ai_chance = {
+			modifier = {
+				trigger = { has_variable = is_max_different_law_count }
+				add = 90
+			}
+			base = 0
+		}
+		
+
+		add_enactment_modifier = {
+			name = real_union_law_is_forbidden
+		}
+		default_option = yes
+	}
+
+	# option = {
+	# 	trigger = {
+	# 		has_variable = is_max_different_law_count
+	# 		is_ai = yes
+	# 		NOT = { root.active_law:lawgroup_rights_of_women.type = root.top_overlord.active_law:lawgroup_rights_of_women.type }
+	# 	}
+	# 	name = real_union_law_rebellion.1.b2
+		
+	# 	ai_chance = {
+	# 		base = 1000
+	# 	}
+		
+		
+	# 	activate_law = root.top_overlord.active_law:lawgroup_rights_of_women.type
+		
+
+	# 	add_enactment_modifier = {
+	# 		name = real_union_law_enactment_overlord_informed
+	# 	}
+	# }
+
+	
+	# War options
+	option = {
+		trigger = {
+			NOT = { has_truce_with = top_overlord }
+			has_variable = is_max_different_law_count
+		}
+
+		name = real_union_law_rebellion.1.c
+		ai_chance = {
+			base = 1
+			modifier = {
+				trigger = {
+					top_overlord = {
+						is_at_war = yes
+					}
+				}
+				add = 20
+			}
+		}
+		create_diplomatic_play = {
+			target_country = root.top_overlord
+			type = dp_independence
+
+			add_war_goal = {
+				holder = root.top_overlord
+				type = annex_country
+				target_country = root
+			}
+		}
+		add_enactment_modifier = {
+			name = real_union_law_enactment_overlord_informed
+		}
+	}
+
+	option = {
+		trigger = {
+			has_truce_with = top_overlord
+			has_variable = is_max_different_law_count
+		}
+
+		ai_chance = {
+			base = 0
+		}
+		name = real_union_law_rebellion.1.d
+			create_diplomatic_play = {
+				target_country = root.top_overlord
+				war = yes
+				type = dp_independence
+
+				add_war_goal = {
+					holder = root.top_overlord
+					type = annex_country
+					target_country = root
+				}
+			}
+		add_enactment_modifier = {
+			name = real_union_law_enactment_overlord_informed
+		}
+	}
+}

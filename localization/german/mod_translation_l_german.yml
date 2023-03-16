@@ -1,4 +1,5 @@
 ﻿l_german:
-  dyn_c_congress_poland:0 "Königreich Polen"
-  real_union:0 "Realunion"
-  subject_type_real_union:0 "Realunion"
+dyn_c_congress_poland:0 "Königreich Polen"
+real_union:0 "Realunion"
+subject_type_real_union:0 "Realunion"
+ig_szlachta:0 "Szlachta"

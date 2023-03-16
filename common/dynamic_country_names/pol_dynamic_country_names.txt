@@ -1,6 +1,6 @@
 ﻿### Try to keep tags in alphabetical order if it's not too far gone, please.
-
-POL = { # Poland
+DEFAULT = {
+#POL = { # Poland
 	dynamic_country_name = {
 		name = dyn_c_congress_poland
 
@@ -8,7 +8,12 @@ POL = { # Poland
 		priority = 0
 
 		trigger = {
+			exists = c:POL
 			exists = c:RUS
+			exists = scope:actor
+			scope:actor = {
+				this = c:POL
+			}
 			c:RUS = {
 				has_diplomatic_pact = {
 					who = c:POL
@@ -18,15 +23,21 @@ POL = { # Poland
 			}
 		}
 
-		trigger = {
-   			exists = c:RUS
-   			c:RUS = {
-   				has_diplomatic_pact = {
-				    who = c:POL
-				    type = personal_union
-				    is_initiator = yes
-			    }
-		    }
-	    }
-    }
+	# 	trigger = {
+	# 		exists = c:POL
+ 	# 		exists = c:RUS
+	# 		exists = scope:actor
+	# 		scope:actor = {
+	# 			this = c:POL
+	# 		}
+ 	# 		c:RUS = {
+ 	# 			has_diplomatic_pact = {
+	# 				who = c:POL
+	# 				type = personal_union
+	# 				is_initiator = yes
+	# 			}
+	# 		}
+	#	 }
+	# }
+#}
 }

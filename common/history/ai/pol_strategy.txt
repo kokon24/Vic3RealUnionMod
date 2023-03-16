@@ -1,5 +1,14 @@
-# AI = {
-# 	c:POL = {
-# 		set_strategy = ai_strategy_independence_150
-# 	}
-# }
+﻿AI = {
+	c:POL = {
+		random_list = {
+			60 = { set_strategy = ai_strategy_resource_expansion }
+			40 = { set_strategy = ai_strategy_agricultural_expansion }
+		}
+		#set_strategy = ai_strategy_maintain_power_balance
+		set_strategy = ai_strategy_maintain_power_balance_congress_poland
+		random_list = {
+			80 = { set_strategy = ai_strategy_conservative_agenda }
+			20 = { set_strategy = ai_strategy_reactionary_agenda }
+		}
+	}
+}

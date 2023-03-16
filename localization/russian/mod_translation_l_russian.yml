@@ -1,4 +1,6 @@
 ﻿l_russian:
-  dyn_c_congress_poland:0 "Царство Польское"
-  real_union:0 "Реальная уния"
-  subject_type_real_union:0 "Реальная уния"
+dyn_c_congress_poland:0 "Царство Польское"
+real_union:0 "Реальная Уния"
+subject_type_real_union:0 "Реальная уния"
+ personal_union_pact_desc:0 "Государство [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] состоит в реальной унии с #tooltippable_name #tooltip:[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetFlagTextIcon][SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetCustom('RU_CL_TP')]#!#!."
+ig_szlachta:0 "Шляхта"

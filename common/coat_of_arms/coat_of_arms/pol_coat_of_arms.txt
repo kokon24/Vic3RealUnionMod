@@ -1,4 +1,4 @@
-POL_subject_RUS = {
+﻿POL_subject_RUS = {
 	pattern = "pattern_solid.tga"
 	color1 = "white"
 	color2 = "congress_polland_blue"

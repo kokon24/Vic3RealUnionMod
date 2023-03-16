@@ -1,0 +1,123 @@
+﻿ai_strategy_maintain_power_balance_congress_poland = {
+	icon = "gfx/interface/icons/ai_strategy_icons/maintain_power_balance.dds"
+	
+	type = diplomatic
+	
+	wanted_army_ratio = {
+		value = 200000
+	}
+	
+	wanted_navy_ratio = {
+		value = 400000
+	}
+	
+	undesirable_infamy_level = {
+		value = 25
+	}
+	
+	unacceptable_infamy_level = {
+		value = 50
+	}
+	
+	ideological_opinion_effect_mult = {
+		value = 1.5
+	}
+	
+	wargoal_maneuvers_fraction = {
+		value = -0.1
+	}	
+	
+	diplomatic_play_neutrality = {
+		value = 0
+	}
+	
+	diplomatic_play_boldness = {
+		value = -25
+	}
+	
+	recklessness = {
+		value = -0.25
+	}
+	
+	aggression = {
+		value = 0.25	
+
+		if = {
+			limit = { 
+				NOT = { is_country_type = unrecognized }
+				scope:target_country = { is_country_type = unrecognized } 
+			}
+			add = 0.25
+			
+			if = {
+				limit = { has_technology_researched = civilizing_mission }
+				add = 0.5
+			}			
+		}
+
+		# Less aggressive against countries we're just antagonistic against, rather than belligerent/domineering
+		if = {
+			limit = {
+				has_attitude = {
+					who = scope:target_country
+					attitude = antagonistic
+				}					
+			}
+			multiply = 0.1
+		}
+
+		# More aggressive against ideological enemies, a bit less aggressive against ideological allies
+		if = {
+			limit = {
+				"ai_ideological_opinion(scope:target_country)" < 0
+			}
+			
+			multiply = {
+				value = "ai_ideological_opinion(scope:target_country)"
+				multiply = -0.2
+				add = 1
+				max = 4.0
+			}				
+		}	
+		else = {
+			multiply = {
+				value = "ai_ideological_opinion(scope:target_country)"
+				multiply = -0.05
+				add = 1
+				min = 0.5
+			}			
+		}		
+	}
+	 
+	building_group_weights = {
+		bg_technology = 0
+		bg_government = 1.7
+		bg_construction = 1
+	}
+	
+	secret_goal_weights = {
+		#protect = 1.5
+		#dominate = 1.5
+		reconcile = 1.5
+		antogonize = 2.0
+	}
+	
+	wargoal_weights = {
+		#regime_change = 3.0
+		humiliation = 2.0
+		liberate_subject = 1.0
+		liberate_country = 1.0
+		liberate_territory = 2.0
+		independence = 5.0
+	}
+
+	possible = {
+		country_has_primary_culture = cu:polish
+		#always = yes
+	}
+	
+	weight = {
+		value = 20
+			
+	}
+}

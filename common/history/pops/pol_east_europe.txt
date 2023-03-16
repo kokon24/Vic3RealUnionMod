@@ -3,7 +3,7 @@
 		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 1676000
+				size = 1620000
 			}
 			create_pop = {
 				culture = lithuanian
@@ -22,13 +22,53 @@
 				religion = protestant
 				size = 16000
 			}
+			# some land was taken away from shlyahta and given to free orthodox farmers
+			# create_pop = {
+			# 	pop_type = farmers
+			# 	culture = polish
+			# 	size = 20000
+			# }
+
+			create_pop = {
+				pop_type = aristocrats
+				culture = polish
+				religion = catholic
+				size = 42000
+			}
+			# few hundred russian land owners were given ~10% of lands
+			create_pop = {
+				pop_type = aristocrats
+				culture = russian
+				religion = catholic
+				size = 6000
+			}
+			create_pop = {
+				pop_type = bureaucrats
+				culture = russian
+				religion = catholic
+				#religion = orthodox
+				size = 500
+			}
+			create_pop = {
+				pop_type = clercs
+				culture = russian
+				religion = catholic
+				#religion = orthodox
+				size = 2500
+			}
+			create_pop = {
+				culture = russian
+				religion = catholic
+				#religion = orthodox
+				size = 5000
+			}
 		}
 	}
 	s:STATE_GREATER_POLAND = {
 		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 897396
+				size = 869396
 			}
 			create_pop = {
 				culture = polish
@@ -43,13 +83,32 @@
 				culture = north_german
 				size = 28000
 			}
+			create_pop = {
+				pop_type = aristocrats
+				culture = polish
+				religion = catholic
+				size = 21000
+			}
+			# few hundred russian land owners were given ~10% of lands
+			create_pop = {
+				pop_type = aristocrats
+				culture = russian
+				religion = catholic
+				size = 3000
+			}
+			create_pop = {
+				culture = russian
+				religion = catholic
+				#religion = orthodox
+				size = 4000
+			}			
 		}
 	}
 	s:STATE_LESSER_POLAND = {
 		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 1057396
+				size = 1018396
 			}
 			create_pop = {
 				culture = polish
@@ -68,6 +127,25 @@
 				culture = north_german
 				size = 20000
 			}
+			create_pop = {
+				pop_type = aristocrats
+				culture = polish
+				religion = catholic
+				size = 30000
+			}
+			# few hundred russian land owners were given ~10% of lands
+			create_pop = {
+				pop_type = aristocrats
+				culture = russian
+				religion = catholic
+				size = 4000
+			}
+			create_pop = {
+				culture = russian
+				religion = catholic
+				#religion = orthodox
+				size = 5000
+			}					
 		}
 	}
 }

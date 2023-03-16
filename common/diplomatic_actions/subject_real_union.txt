@@ -12,11 +12,13 @@
 		recipient_pays_maintenance = no
 		is_customs_union = yes
 		income_transfer = 0.15
-    	recipient_gets_income_transfer = no
-    	income_transfer_based_on_recipient = yes
+		recipient_gets_income_transfer = no
+		income_transfer_based_on_recipient = yes
 
 		relations_progress_per_day = 1
 		relations_improvement_max = 50
+		#is_defensive_pact = yes
+		#is_alliance = yes		
 
 		target_requires_approval_to_break = yes
 
