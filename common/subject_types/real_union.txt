@@ -14,12 +14,21 @@
 	convoy_contribution = 0.5
 
 
-	
-
 	diplomatic_action = real_union
 
-	can_change_subject_type_from = {
+	country_type_change_alternatives = {
+#		subject_type_tributary
+#		subject_type_protectorate
+#		subject_type_dominion
 		subject_type_personal_union
+#		subject_type_real_union
+	}	
+
+	can_change_subject_type_from = {
+#		subject_type_protectorate
+#		subject_type_dominion
+		subject_type_personal_union
+#		subject_type_real_union
 	}
 
 	valid_overlord_country_types = {
@@ -32,6 +41,8 @@
 		recognized
 		colonial
 		unrecognized
+#		subject_type_personal_union
+#		subject_type_real_union
 	}
 
 	valid_overlord_ranks = {

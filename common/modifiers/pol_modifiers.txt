@@ -28,7 +28,28 @@ real_union_law_is_forbidden = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_law_enactment_success_add = -1
 	country_cannot_enact_laws = yes
-	
+}
+
+real_union_overlord_serfdom_banned = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_pop_support_law_serfdom_mult = -0.3
+	state_pop_support_law_serfdom_banned_mult = 0.3
+#	political_movement_radicalism_mult = 0.2
+	country_promotion_ig_attraction_mult = 0.1
+	political_movement_radicalism_mult = 0.1
+	interest_group_ig_landowners_pop_attraction_mult = -0.1
+}
+
+
+real_union_overlord_serfdom_banned2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_pop_support_law_serfdom_add = -5
+	state_pop_support_law_serfdom_banned_add = 5
+}
+
+pledged_to_end_serfdom = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 1
 }
 
 # universities_are_forbidden = {

@@ -8,12 +8,19 @@
 # Root = owner Country of the Law
 # executed when enactment of any law begins
 #on_law_enactment_started = {
+on_start_expanding_building = {
+	events = {	
+		real_union_university_warning.1
+	}
+}
+
 on_monthly_pulse_country = {
 	events = {	
 	#effect = {
 	#	random_events = {
 			real_union_generic_laws.1
 			real_union_police_law.1
+			real_union_progressive_laws.1
 		}
 		# if = {
 		# 	limit = {
@@ -33,11 +40,11 @@ on_monthly_pulse_country = {
 	#}
 }
 
-on_law_checkpoint_advance = {
-	events = {
-		real_union_generic_laws.1
-	}
-}
+# on_law_checkpoint_advance = {
+# 	events = {
+# 		real_union_generic_laws.1
+# 	}
+# }
 
 # on_diplomatic_action_break = {
 # 	effect = {

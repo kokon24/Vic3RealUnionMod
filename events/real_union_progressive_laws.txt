@@ -1,0 +1,163 @@
+﻿namespace = real_union_progressive_laws
+
+real_union_progressive_laws.1 = {
+	type = country_event
+
+	title = real_union_progressive_laws.1.t
+	desc = real_union_progressive_laws.1.d
+	flavor = real_union_progressive_laws.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/public_protest"
+
+	#icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+		#is_ai = yes
+		#enacting_any_law = yes
+		#law_enactment_progress < 30
+		has_diplomatic_pact = {
+			type = real_union
+			who = root.top_overlord
+		}
+		is_subject = yes
+		
+		
+		root.top_overlord = {
+			has_law = law_type:law_serfdom_banned
+		}
+		has_law = law_type:law_serfdom
+		NOT = { has_variable = serfdom_law_event_done }
+	}
+
+	immediate = {
+		set_variable = serfdom_law_event_done
+		debug_log = "real_union overlord_serfdom_law"
+
+		# random_interest_group = {
+		# 	limit = {
+		# 		law_stance = {
+		# 			law = law_type:law_serfdom
+		# 			value < neutral
+		# 		}
+		# 	}
+		# 	save_scope_as = anti_serfdom_ig
+		# 	leader = { save_scope_as = anti_serfdom_ig_leader }
+		# }
+
+		# currently_enacting_law = {
+		# 	save_scope_as = current_law_scope
+		# }
+		# ig:ig_armed_forces = {
+		# 	save_scope_as = internal_security_ig
+		# }
+		# random_interest_group = {
+		# 	limit = {
+		# 		law_stance = {
+		# 			law = law_type:law_secret_police
+		# 			value < neutral
+		# 		}
+		# 	}
+		# 	save_scope_as = anti_secret_police_ig
+		# 	leader = {
+		# 		save_scope_as = anti_secret_police_leader
+		# 	}
+		# }
+		# random_political_movement = {
+		# 	limit = {
+		# 		is_political_movement_type = movement_to_enact
+		# 	}
+		# 	save_scope_as = enacting_movement
+		# }
+	}
+
+	option = { # they are right
+		name = internal_security_events.3.a
+		default_option = yes
+		#create_political_movement = law_type:law_serfdom_banned.type
+		add_modifier = {
+			name = real_union_overlord_serfdom_banned
+			days = -1
+		}
+		# scope:anti_serfdom_ig = {
+		# 	add_modifier = {
+		# 		name = pledged_to_end_serfdom
+		# 		months = normal_modifier_time
+		# 	}
+		# }
+		
+
+		# if there's a movement to preserve, they get happy
+		# if = {
+		# 	limit = {
+		# 		any_political_movement = {
+		# 			is_political_movement_type = movement_to_preserve
+		# 		}
+		# 	}
+		# 	random_political_movement = {
+		# 		limit = {
+		# 			is_political_movement_type = movement_to_preserve
+		# 		}
+		# 		add_modifier = {
+		# 			name = privacy_concerns_movement_modifier
+		# 		}
+		# 	}
+		# }
+		# scope:anti_secret_police_ig = {
+		# 	add_modifier = {
+		# 		name = privacy_concerns_ig_modifier
+		# 		months = normal_modifier_time
+		# 	}
+		# }
+	}
+
+
+	# option = { # they are right
+	# 	name = internal_security_events.2.a
+	# 	trigger = {
+	# 		is_ai = yes
+	# 	}
+	# 	ai_chance = {
+	# 		base = 100
+	# 	}
+	# 	activate_law = law_type:law_serfdom_banned
+	# 	add_radicals = {
+	# 		value = small_radicals
+	# 		pop_type = academics
+	# 	}
+	# 	add_radicals = {
+	# 		value = small_radicals
+	# 		pop_type = officers
+	# 	}
+	# }
+	# if there's a movement to preserve, they get happy
+	# if = {
+	# 	limit = {
+	# 		any_political_movement = {
+	# 			is_political_movement_type = movement_to_preserve
+	# 		}
+	# 	}
+	# 	random_political_movement = {
+	# 		limit = {
+	# 			is_political_movement_type = movement_to_preserve
+	# 		}
+	# 		add_modifier = {
+	# 			name = privacy_concerns_movement_modifier
+	# 		}
+	# 	}
+	# }
+	# scope:anti_secret_police_ig = {
+	# 	add_modifier = {
+	# 		name = privacy_concerns_ig_modifier
+	# 		months = normal_modifier_time
+	# 	}
+	# }
+
+}

@@ -10,10 +10,10 @@
 	}
 	
 	lawgroup_distribution_of_power = {
-		law_landed_voting = neutral
-		law_autocracy = approve
+		law_landed_voting = strongly_approve
+		law_autocracy = strongly_approve
 		law_oligarchy = approve
-		law_wealth_voting = disapprove
+		law_wealth_voting = neutral
 		law_census_voting = disapprove
 		law_universal_suffrage = strongly_disapprove
 		law_anarchy = strongly_disapprove
@@ -21,7 +21,7 @@
 	
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
-		law_appointed_bureaucrats = disapprove
+		law_appointed_bureaucrats = neutral
 		law_elected_bureaucrats = disapprove
 	}
 
@@ -37,6 +37,7 @@
 		law_agrarianism = approve
 		law_interventionism = neutral
 		law_laissez_faire = disapprove
+		law_cooperative_ownership = strongly_disapprove
 		law_command_economy = strongly_disapprove
 	}
 	

@@ -1,0 +1,61 @@
+﻿namespace = real_union_university_warning
+
+real_union_university_warning.1 = {
+	type = country_event
+
+	title = real_union_university_warning.1.t
+	desc = real_union_university_warning.1.d
+	flavor = real_union_university_warning.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/public_protest"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+		#is_ai = yes
+		#enacting_any_law = yes
+		#law_enactment_progress < 30
+		is_subject = yes
+
+		has_diplomatic_pact = {
+			type = real_union
+			who = root.top_overlord
+		}
+		
+		c:POL = {
+			any_scope_building = {
+				is_building_type = building_university
+				level >= 1
+			}
+		}
+		
+		# root.top_overlord = {
+		# 	has_law = law_type:law_serfdom_banned
+		# }
+		# has_law = law_type:law_serfdom
+		NOT = { has_variable = university_warning_done }
+	}
+
+	immediate = {
+		set_variable = university_warning_done
+		debug_log = "real_union university_warning"
+	}
+
+	option = {
+		name = internal_security_events.3.a
+		default_option = yes
+		change_relations = { 
+			country = root.top_overlord 
+			value = -10 
+		}
+	}
+
+
+}

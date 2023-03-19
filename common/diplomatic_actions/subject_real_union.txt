@@ -1,8 +1,38 @@
 ﻿real_union = {
 	can_select = no
 	can_use_obligations = yes
+	requires_approval = yes
 
 	potential = {
+		#has_diplomatic_pact = { who = root type = real_union }
+		#scope:target_country = {
+		#	relations:root >= relations_threshold:friendly	
+		#}
+		#scope:target_country = { relations:root <= relations_threshold:poor }
+
+		# scope:target_country = {
+		# 	NOT = { is_country_type = decentralized }
+		# 	is_direct_subject_of = root
+		# 	OR = {
+		# 		has_diplomatic_pact = { who = root type = dominion }
+		# 		has_diplomatic_pact = { who = root type = puppet }
+		# 		has_diplomatic_pact = { who = root type = vassal }
+		# 		has_diplomatic_pact = { who = root type = personal_union }
+		# 	}
+		# }			
+
+		# scope:target_country = { 
+		# 	has_diplomatic_pact = {
+		# 		type = real_union
+		# 		who = root.top_overlord
+		# 	}
+		# }
+
+		#scope:target_country = { relations:root <= relations_threshold:poor }
+		always = no
+	}
+
+	possible = {
 		always = no
 	}
 
@@ -41,6 +71,21 @@
 				NOT = { has_law = law_type:law_monarchy }
 				scope:target_country = { NOT = { has_law = law_type:law_monarchy } }
 			}
+		}
+	}
+
+	accept_effect = {
+		if = {
+			limit = {
+				has_diplomatic_pact = {
+					who = scope:target_country
+					type = personal_union
+				}			
+			}
+			remove_diplomatic_pact = {
+				country = scope:target_country
+				type = personal_union
+			}			
 		}
 	}
 
