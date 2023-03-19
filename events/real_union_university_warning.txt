@@ -12,33 +12,25 @@ real_union_university_warning.1 = {
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/africa/public_protest"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
 
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 
 	duration = 3
 
 	trigger = {
-		#is_ai = yes
-		#enacting_any_law = yes
-		#law_enactment_progress < 30
-		is_subject = yes
-
 		has_diplomatic_pact = {
 			type = real_union
 			who = root.top_overlord
 		}
 		
-		c:POL = {
+		root = {
 			any_scope_building = {
 				is_building_type = building_university
 				level >= 1
 			}
+			is_subject = yes
 		}
-		
-		# root.top_overlord = {
-		# 	has_law = law_type:law_serfdom_banned
-		# }
 		# has_law = law_type:law_serfdom
 		NOT = { has_variable = university_warning_done }
 	}
@@ -49,13 +41,11 @@ real_union_university_warning.1 = {
 	}
 
 	option = {
-		name = internal_security_events.3.a
+		name = real_union_university_warning.1.a
 		default_option = yes
 		change_relations = { 
 			country = root.top_overlord 
 			value = -10 
 		}
 	}
-
-
 }
