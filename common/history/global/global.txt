@@ -15,7 +15,14 @@
 	# 		}
 	# 	}
 	# }	
-	
+
+	# every_country = {
+	# 	limit = {
+	# 		exists = c:RUS
+	# 		this = c:RUS
+	# 	}
+	# 	set_variable = great_game_ach_possible
+	# }
 
 
 	c:POL = {

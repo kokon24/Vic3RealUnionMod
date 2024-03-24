@@ -478,11 +478,11 @@ real_union_generic_laws.1 = {
 				war = yes
 				type = dp_independence
 
-				add_war_goal = {
-					holder = root.top_overlord
-					type = annex_country
-					target_country = root
-				}
+				# add_war_goal = {
+				# 	holder = root.top_overlord
+				# 	type = annex_country
+				# 	target_country = root
+				# }
 			}
 		add_enactment_modifier = {
 			name = real_union_law_enactment_overlord_informed

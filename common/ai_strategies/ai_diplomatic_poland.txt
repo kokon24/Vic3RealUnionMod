@@ -3,13 +3,6 @@
 	
 	type = diplomatic
 	
-	wanted_army_ratio = {
-		value = 200000
-	}
-	
-	wanted_navy_ratio = {
-		value = 400000
-	}
 	
 	undesirable_infamy_level = {
 		value = 25
@@ -91,7 +84,7 @@
 	 
 	building_group_weights = {
 		bg_technology = 0
-		bg_government = 1.7
+		bg_government = 1.8
 		bg_construction = 1
 	}
 	

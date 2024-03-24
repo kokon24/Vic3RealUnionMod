@@ -1,43 +1,47 @@
-﻿### Try to keep tags in alphabetical order if it's not too far gone, please.
-DEFAULT = {
-#POL = { # Poland
+﻿DEFAULT = {
+	# ACW revolters
 	dynamic_country_name = {
-		name = dyn_c_congress_poland
-
-		is_main_tag_only = yes
-		priority = 0
-
+		name = csa_revolt_name
+		adjective = csa_revolt_name_adj
+		
+		is_revolutionary = yes
+		priority = 100
+		
 		trigger = {
 			exists = c:POL
 			exists = c:RUS
 			exists = scope:actor
-			scope:actor = {
+			scope:actor ?= {
 				this = c:POL
 			}
-			c:RUS = {
-				has_diplomatic_pact = {
-					who = c:POL
-					type = real_union
-					is_initiator = yes
-				}
-			}
 		}
-
-	# 	trigger = {
-	# 		exists = c:POL
- 	# 		exists = c:RUS
-	# 		exists = scope:actor
-	# 		scope:actor = {
-	# 			this = c:POL
-	# 		}
- 	# 		c:RUS = {
- 	# 			has_diplomatic_pact = {
-	# 				who = c:POL
-	# 				type = personal_union
-	# 				is_initiator = yes
-	# 			}
-	# 		}
-	#	 }
-	# }
 	}
+}
+
+POL = {
+	dynamic_country_name = {
+		name = dyn_c_congress_poland
+
+		is_main_tag_only = no
+		priority = 1000
+
+		trigger = {
+			exists = c:POL
+			#exists = c:RUS
+				# c:RUS = {
+				# 	has_diplomatic_pact = {
+				# 		who = c:POL
+				# 		type = real_union
+				# 		is_initiator = yes
+				# 	}
+				# }
+				# c:RUS = {
+				# 	has_diplomatic_pact = {
+				# 		who = c:POL
+				# 		type = personal_union
+				# 		is_initiator = yes
+			 	# 	}
+		 		# }
+		}
+    }
 }

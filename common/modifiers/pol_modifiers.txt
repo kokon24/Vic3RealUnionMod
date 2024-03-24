@@ -6,8 +6,10 @@
 	interest_group_ig_landowners_approval_add= -2
 	#interest_group_ig_devout_approval_add= -1
 	#state_turmoil_effects_mult = 0.05
-	#country_authority_add = -100
-	country_authority_mult = -0.2
+	country_authority_add = -200
+	#country_influence_add = -200
+	#country_bureaucracy_mult = -0.1
+	#country_authority_mult = -0.2
 	#state_turmoil_effects_mult = 0.2
 	#state_turmoil_effects_mult = 0.05
 	#state_radicals_from_sol_change_mult = -0.05
