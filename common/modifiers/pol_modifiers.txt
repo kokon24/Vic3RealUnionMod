@@ -3,10 +3,9 @@
 	#country_legitimacy_base_add = -10
 	country_legitimacy_headofstate_add = -20
 	#interest_group_ig_armed_forces_approval_add = -2
-	interest_group_ig_landowners_approval_add= -2
+	#interest_group_ig_landowners_approval_add= -2
 	#interest_group_ig_devout_approval_add= -1
 	#state_turmoil_effects_mult = 0.05
-	country_authority_add = -200
 	#country_influence_add = -200
 	#country_bureaucracy_mult = -0.1
 	#country_authority_mult = -0.2
@@ -16,13 +15,22 @@
 	state_expected_sol_from_literacy=1
 	#state_rich_expected_sol=16
 	state_pop_support_law_monarchy_mult = -0.3
+	#country_legitimacy_base_add = -50
+    #state_turmoil_effects_mult = 0.50
+    state_radicals_from_sol_change_mult = 0.2
+    state_loyalists_from_sol_change_mult = -0.2
 }
 
 real_union_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_influence_mult = -0.5
+	country_authority_add = -200
 	#country_minting_mult = -0.2
 	country_minting_add = -400
+	country_bureaucracy_mult = -0.1
+	state_building_barracks_max_level_add = -5
+	#state_building_conscription_center_max_level_add = -5
+	#state_building_university_max_level_add = -5
 	#interest_group_ig_landowners_pol_str_mult = -0.05
 }
 
@@ -55,7 +63,7 @@ pledged_to_end_serfdom = {
 }
 
 # universities_are_forbidden = {
-# 	c:POL = {
+# 	c:CPL = {
 # 		deactivate_building = building_university
 # 	}
 # }

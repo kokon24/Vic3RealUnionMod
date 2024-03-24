@@ -25,7 +25,7 @@
 	# }
 
 
-	c:POL = {
+	c:CPL = {
 		add_radicals = {
 			culture = cu:polish
 			value = 0.20
@@ -94,7 +94,7 @@
 	# 	add_devastation = 5
 	# }
 	# s:STATE_MAZOVIA={
-	# 	region_state:POL={
+	# 	region_state:CPL={
 	# 		deactivate_building = {
 	# 			building = building_university
 	# 		}

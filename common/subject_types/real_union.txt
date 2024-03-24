@@ -13,7 +13,6 @@
 	subservient_to_overlord = yes
 	convoy_contribution = 0.5
 
-
 	diplomatic_action = real_union
 
 # 	country_type_change_alternatives = {

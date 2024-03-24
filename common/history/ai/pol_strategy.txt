@@ -1,5 +1,5 @@
 ﻿AI = {
-	c:POL = {
+	c:CPL = {
 		random_list = {
 			60 = { set_strategy = ai_strategy_resource_expansion }
 			40 = { set_strategy = ai_strategy_agricultural_expansion }

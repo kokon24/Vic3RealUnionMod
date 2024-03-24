@@ -1,6 +1,6 @@
 ﻿POPS = {
 	s:STATE_MAZOVIA = {
-		region_state:POL = {
+		region_state:CPL = {
 			create_pop = {
 				culture = polish
 				size = 1620000
@@ -65,7 +65,7 @@
 		}
 	}
 	s:STATE_GREATER_POLAND = {
-		region_state:POL = {
+		region_state:CPL = {
 			create_pop = {
 				culture = polish
 				size = 869396
@@ -105,7 +105,7 @@
 		}
 	}
 	s:STATE_LESSER_POLAND = {
-		region_state:POL = {
+		region_state:CPL = {
 			create_pop = {
 				culture = polish
 				size = 1018396

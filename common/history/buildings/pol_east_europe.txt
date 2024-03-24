@@ -1,6 +1,6 @@
 ﻿BUILDINGS={
 	s:STATE_MAZOVIA={
-		region_state:POL={
+		region_state:CPL={
 			create_building={
 				building="building_government_administration"
 				level=2
@@ -52,7 +52,7 @@
 		}
 	}
 	s:STATE_GREATER_POLAND={
-		region_state:POL={
+		region_state:CPL={
 			create_building={
 				building="building_textile_mills"
 				level=1
@@ -68,7 +68,7 @@
 		}
 	}
 	s:STATE_LESSER_POLAND={
-		region_state:POL={
+		region_state:CPL={
 			create_building={
 				building="building_paper_mills"
 				level=1
