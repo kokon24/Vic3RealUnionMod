@@ -1,0 +1,13 @@
+﻿COUNTRIES = {
+	c:RUS ?= {
+		add_modifier = {
+			name = modifier_greek_loans_income
+			months = 432 # 35 years
+		}
+		activate_law = law_type:law_local_police
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 2
+		}
+	}
+}

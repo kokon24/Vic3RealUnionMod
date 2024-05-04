@@ -1,0 +1,10 @@
+﻿TRS = {
+	color = { 211  207  173 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { hungarian } #Romanians weren't really accepted at this time, TODO: add decision to make romanian accepted
+	capital = STATE_SOUTHERN_TRANSYLVANIA
+}

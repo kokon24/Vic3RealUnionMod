@@ -48,7 +48,7 @@
 		relations_progress_per_day = 1
 		relations_improvement_max = 50
 		#is_defensive_pact = yes
-		#is_alliance = yes		
+		is_alliance = yes
 
 		target_requires_approval_to_break = yes
 

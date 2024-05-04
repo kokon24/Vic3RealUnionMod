@@ -1,0 +1,8 @@
+﻿COUNTRIES = {
+	c:GRE ?= {
+		add_modifier = {
+			name = modifier_greek_loans_expenses
+			months = 432 # 41 years
+		}
+	}
+}

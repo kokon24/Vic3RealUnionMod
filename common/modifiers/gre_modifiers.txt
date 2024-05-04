@@ -1,0 +1,10 @@
+﻿modifier_greek_loans_expenses = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3000
+	state_radicals_from_sol_change_mult = 0.1
+	country_prestige_mult = -0.1
+}
+modifier_greek_loans_income = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_tax_income_add = 1000
+}

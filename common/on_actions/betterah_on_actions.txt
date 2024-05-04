@@ -1,0 +1,53 @@
+﻿# on_revolution_start = {
+#     on_actions = {
+#         betterah_rev_start_on_action
+#     }
+# }
+
+# on_diplomatic_play_started = {
+#     on_actions = {
+#         betterah_hungarian_revolution_on_action
+#     }
+# }
+
+# betterah_rev_start_on_action = {
+#     events = {
+# 		betterah_hungary.1
+# 	}
+# }
+
+# betterah_hungarian_revolution_on_action = {
+#     effect = {
+#         if = {
+#             limit = {
+#                 exists = c:HUN
+#                 ROOT = c:HUN
+#                 is_direct_subject_of = c:AUS
+#                 OR = {
+#                     AND = {
+#                         scope:diplomatic_play = {
+#                             initiator = c:HUN
+#                             target = c:AUS
+#                         }
+#                     }
+#                     AND = {
+#                         scope:diplomatic_play = {
+#                             initiator = c:AUS
+#                             target = c:HUN
+#                         }
+#                     }
+#                 }
+#             }
+#             trigger_event = betterah_hungary.11
+#             if = {
+#                 limit = {
+#                     exists = c:TRS
+#                     c:TRS = {is_direct_subject_of = c:AUS}
+#                 }
+#                 c:TRS = {
+#                     trigger_event = betterah_transylvania.1 #Transylvania can join hungary at revolution start
+#                 }
+#             }
+#         }
+#     }
+# }

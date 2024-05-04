@@ -1,0 +1,8 @@
+﻿COUNTRIES = {
+	c:FIN ?= {
+		add_modifier = {
+			name = real_union_modifier
+			months = -1
+		}
+	}
+}

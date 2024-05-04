@@ -1,0 +1,97 @@
+﻿# HUN = { # Hungary
+# 	flag_definition = {
+# 		coa = HUN
+# 		subject_canton = HUN
+# 		allow_overlord_canton = yes
+# 		priority = 1
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_monarchy
+# 		subject_canton = HUN
+# 		priority = 10
+# 		trigger = { 
+# 			coa_def_monarchy_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_absolute_monarchy
+# 		subject_canton = HUN
+# 		priority = 15
+# 		trigger = { 
+# 			coa_def_absolute_monarchy_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_republic
+# 		subject_canton = HUN
+# 		priority = 25
+# 		trigger = { 
+# 			coa_def_republic_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_theocracy
+# 		subject_canton = HUN_theocracy
+# 		priority = 30
+# 		trigger = { 
+# 			coa_def_theocracy_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_multicultural
+# 		subject_canton = HUN
+# 		priority = 20
+# 		trigger = { 
+# 			coa_def_multicultural_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_communist
+# 		subject_canton = HUN_communist
+# 		allow_overlord_canton = yes
+# 		priority = 1500
+# 		trigger = { 
+# 			coa_def_communist_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_anarchy
+# 		subject_canton = HUN_anarchy
+# 		priority = 1000
+# 		trigger = { 
+# 			coa_def_anarchy_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_dictatorship
+# 		subject_canton = HUN_dictatorship
+# 		priority = 30
+# 		trigger = { 
+# 			coa_def_dictatorship_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_state_religion
+# 		subject_canton = HUN
+# 		priority = 25
+# 		trigger = { 
+# 			coa_def_state_religion_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_military
+# 		subject_canton = HUN
+# 		priority = 50
+# 		trigger = { 
+# 			coa_def_military_junta_flag_trigger = yes
+# 		}
+# 	}
+# 	flag_definition = {
+# 		coa = HUN_fascist
+# 		subject_canton = HUN_fascist
+# 		priority = 500
+# 		trigger = { 
+# 			coa_def_fascist_flag_trigger = yes
+# 		}
+# 	}
+# }	

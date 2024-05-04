@@ -1,0 +1,8 @@
+﻿COUNTRIES = {
+	c:GBR ?= {
+		add_modifier = {
+			name = modifier_greek_loans_income
+			months = 432 # 35 years
+		}
+	}
+}

@@ -23,6 +23,16 @@ on_monthly_pulse_country = {
 			real_union_progressive_laws.1
 			real_union_university_warning.1
 		}
+	on_actions = {
+		remove_debt_modifier_monthly_pulse
+		remove_pol_real_union_modifier_monthly_pulse
+		remove_fin_real_union_modifier_monthly_pulse
+	}
+
+	# effect = {
+
+	# }
+	
 		# if = {
 		# 	limit = {
 		# 		has_law = law_type:law_monarchy
@@ -39,6 +49,132 @@ on_monthly_pulse_country = {
 		# 	add_journal_entry = { type =je_abolish_monarchy }
 		# }
 	#}
+	
+}
+
+remove_debt_modifier_monthly_pulse = {
+	effect = {
+		if = {
+			limit = {
+				this = c:RUS
+				c:RUS ?= {
+					OR = {
+						has_modifier = modifier_greek_loans_income
+					}
+				}
+				NOT = { exists = c:GRE }
+			}
+			c:RUS = {
+				if = {
+					limit = {
+						has_modifier = modifier_greek_loans_income
+					}
+					remove_modifier = modifier_greek_loans_income
+				}
+			}
+		}
+		if = {
+			limit = {
+				this = c:FRA
+				c:FRA ?= {
+					OR = {
+						has_modifier = modifier_greek_loans_income
+					}
+				}
+				NOT = { exists = c:GRE }
+			}
+			c:FRA = {
+				if = {
+					limit = {
+						has_modifier = modifier_greek_loans_income
+					}
+					remove_modifier = modifier_greek_loans_income
+				}
+			}
+		}
+		if = {
+			limit = {
+				this = c:GBR
+				c:GBR ?= {
+					OR = {
+						has_modifier = modifier_greek_loans_income
+					}
+				}
+				NOT = { exists = c:GRE }
+			}
+			c:GBR = {
+				if = {
+					limit = {
+						has_modifier = modifier_greek_loans_income
+					}
+					remove_modifier = modifier_greek_loans_income
+				}
+			}
+		}
+	}
+}
+
+remove_pol_real_union_modifier_monthly_pulse = {
+	effect = {
+		if = {
+			limit = {
+				this = c:CPL
+				c:CPL ?= {
+					OR = {
+						has_modifier = strong_independence_movement_modifier
+						has_modifier = real_union_modifier
+					}
+				}
+				is_subject = no
+				# NOT = {
+				# 	has_diplomatic_pact = {
+				# 		who = this
+				# 		type = real_union
+				# 	}	
+				# }
+			}
+			c:CPL = {
+				if = {
+					limit = {
+						has_modifier = strong_independence_movement_modifier
+					}
+					remove_modifier = strong_independence_movement_modifier
+					remove_modifier = real_union_modifier
+					remove_primary_culture = cu:russian
+				}
+			}
+		}
+	}
+}
+remove_fin_real_union_modifier_monthly_pulse = {
+	effect = {
+		if = {
+			limit = {
+				this = c:FIN
+				c:FIN ?= {
+					OR = {
+						has_modifier = real_union_modifier
+					}
+				}
+				is_subject = no
+				# NOT = {
+				# 	has_diplomatic_pact = {
+				# 		who = this
+				# 		type = real_union
+				# 	}	
+				# }
+			}
+			c:FIN = {
+				if = {
+					limit = {
+						has_modifier = real_union_modifier
+					}
+					remove_modifier = real_union_modifier
+					remove_primary_culture = cu:russian
+				}
+			}
+		}
+	}
 }
 
 # on_law_checkpoint_advance = {
