@@ -90,13 +90,21 @@
 		#}
 
 		add = {
-			value = 18
+			value = 20
 			desc = "POP_BASE_SUPPORT"
 		}
-		add = {
+		multiply = { # Illiterate pops participate at 1/2 the rate of fully literate pops
+			desc = "POP_LITERACY"
 			value = literacy_rate
-			desc = "EDUCATION"
-			divide = 5
+			add = 0.5
+			max = 1.2 # Needs a less high literacy rate to get started, but caps out the same as other movements
+		}
+
+		multiply = { # Multiplied by 1.25x max
+			desc = "POP_RADICALS"
+			value = pop_radical_fraction
+			divide = 4
+			add = 1
 		}
 		
 		if = {

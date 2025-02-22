@@ -75,37 +75,37 @@
 			pop_type = peasants
 		}
 		add_radicals = {
-			value = 0.03
+			value = 0.04
 			culture = cu:polish
 			pop_type = bureaucrats
 		}
 		add_radicals = {
-			value = 0.03
+			value = 0.04
 			culture = cu:polish
 			pop_type = machinists
 		}
 		add_radicals = {
-			value = 0.03
+			value = 0.04
 			culture = cu:polish
 			pop_type = laborers
 		}
 		add_radicals = {
-			value = 0.03
+			value = 0.04
 			culture = cu:polish
 			pop_type = clerks
 		}
 		add_radicals = {
-			value = 0.03
+			value = 0.04
 			culture = cu:polish
 			pop_type = shopkeepers
 		}
 		add_radicals = {
-			value = 0.03
+			value = 0.04
 			culture = cu:polish
 			pop_type = farmers
 		}
 		add_radicals = {
-			value = 0.03
+			value = 0.04
 			culture = cu:polish
 			pop_type = engineers
 		}
