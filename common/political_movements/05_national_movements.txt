@@ -140,7 +140,7 @@
 			}
 			add = {
 				value = 5
-				desc = "POP_ACADEMICS"
+				desc = "POP_OFFICERS"
 			}
 		}	
 
