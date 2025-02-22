@@ -1,7 +1,7 @@
 ﻿l_german:
 CPL: "Königreich Polen"
 CPL_ADJ: "Polnisch"
-dyn_c_congress_poland:0 "Königreich Polen"
+dyn_cc_congress_poland:0 "Königreich Polen"
 real_union:0 "Realunion"
 subject_type_real_union:0 "Realunion"
 ig_szlachta:0 "Szlachta"

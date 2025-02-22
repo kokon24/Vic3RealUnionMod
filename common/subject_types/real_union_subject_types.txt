@@ -1,19 +1,34 @@
 ﻿subject_type_real_union = {
 	allow_change_country_flag = yes
 	use_overlord_map_color = yes
-	use_overlord_ruler = yes
+	use_overlord_ruler = no
 	annex_on_country_formation = yes
 	can_start_own_diplomatic_plays = no
 	breaks_if_subject_not_protected = yes
 	join_overlord_wars = yes
-	overlord_must_be_higher_rank = yes
+	overlord_must_be_higher_rank = no
 	overlord_must_be_same_country_type = no
 	use_for_release_country = no
 	gives_prestige_to_overlord = yes
-	subservient_to_overlord = yes
-	convoy_contribution = 0.5
+	can_target_with_transfer_wargoal = no
+	can_be_used_in_sway_offers = no
 
 	diplomatic_action = real_union
+
+	autonomy_level = 1
+	#category = same_as_personal_union
+	category = same_as_puppet
+
+	higher_autonomy_subject_type_alternatives = {
+		#subject_type_personal_union
+		subject_type_dominion
+	}	
+
+	same_autonomy_subject_type_alternatives = {
+		subject_type_vassal
+		subject_type_puppet
+		subject_type_colony
+	}	
 
 # 	country_type_change_alternatives = {
 # #		subject_type_tributary
@@ -59,5 +74,12 @@
 		insignificant_power
 		unrecognized_regional_power
 		unrecognized_power
+	}
+
+		# Multiplies both subject_value and become_subject_value in AI strategies
+	# Higher value means AI is more interested in having this type of subject but less interested in *being* this type of subject
+	# Cannot return a value lower than MIN_SUBJECT_TYPE_VALUE
+	ai_value = {
+		value = 1.1
 	}
 }

@@ -1,6 +1,6 @@
 ﻿POL = {
 	dynamic_country_name = {
-		name = dyn_c_congress_poland
+		name = dyn_cc_congress_poland
 
 		is_main_tag_only = no
 		priority = 1000

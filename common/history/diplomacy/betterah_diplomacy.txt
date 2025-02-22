@@ -1,12 +1,12 @@
-DIPLOMACY = {
-	c:AUS = {
-        create_diplomatic_pact = {
-			country = c:HUN
-			type = real_union
-		}
-		create_diplomatic_pact = {
-			country = c:TRS
-			type = personal_union
-		}
-	}
-}
+﻿# DIPLOMACY = {
+# 	c:AUS = {
+#         create_diplomatic_pact = {
+# 			country = c:HUN
+# 			type = real_union
+# 		}
+# 		create_diplomatic_pact = {
+# 			country = c:TRS
+# 			type = personal_union
+# 		}
+# 	}
+# }

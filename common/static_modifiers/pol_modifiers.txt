@@ -1,7 +1,10 @@
 ﻿strong_independence_movement_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
-	#country_legitimacy_base_add = -10
-	country_legitimacy_headofstate_add = -10
+	country_legitimacy_base_add = -5
+	#country_russians_acceptance_max_add = 80
+	#country_liberty_desire_add = 0.04
+	#polical_movement_radicalism_mult = 0.1
+	#country_legitimacy_headofstate_add = -20
 	#interest_group_ig_armed_forces_approval_add = -2
 	#interest_group_ig_landowners_approval_add= -2
 	#interest_group_ig_devout_approval_add= -1
@@ -11,23 +14,58 @@
 	#country_authority_mult = -0.2
 	#state_turmoil_effects_mult = 0.2
 	#state_turmoil_effects_mult = 0.05
-	#state_radicals_from_sol_change_mult = -0.05
-	state_expected_sol_from_literacy=1
+	#state_expected_sol_from_literacy=1
 	#state_rich_expected_sol=16
-	state_pop_support_law_monarchy_mult = -0.3
-	#country_legitimacy_base_add = -50
+	#########state_pop_support_law_monarchy_mult = -0.3
     #state_turmoil_effects_mult = 0.50
-    state_radicals_from_sol_change_mult = 0.2
-    state_loyalists_from_sol_change_mult = -0.2
+    ###########state_radicals_from_sol_change_mult = 0.2
+    ###########state_loyalists_from_sol_change_mult = -0.2
 }
+
+
+#country_vaishyas_acceptance_min_add = {
+#	decimals = 0
+#	color = good
+#	percent = no
+#	game_data = {
+#		ai_value = 0
+#		tags = { cultural_acceptance }
+#	}
+#}
+
+ig_independance_desire_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	interest_group_approval_add = -1
+}
+
+ig_independance_desire_2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	interest_group_approval_add = -2
+}
+
+ig_independance_desire_3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	interest_group_approval_add = -3
+}
+
+
+#warsaw_fortress_modifier = {
+#	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+#	state_modifiers = {
+#		unscaled = {
+#			unit_army_defense_add = 10
+#		}
+#	}
+#}
 
 real_union_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_influence_mult = -0.5
-	country_authority_add = -200
+	#####country_influence_mult = -0.5
+	#country_authority_mult = -0.1
+	#country_authority_add = -200
 	#country_minting_mult = -0.2
-	country_minting_add = -400
-	country_bureaucracy_mult = -0.1
+	#country_minting_add = -500
+	####country_bureaucracy_mult = -0.1
 	#state_building_barracks_max_level_add = -5
 	#state_building_conscription_center_max_level_add = -5
 	#state_building_university_max_level_add = -5
@@ -37,24 +75,24 @@ real_union_modifier = {
 real_union_law_is_forbidden = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_law_enactment_success_add = -1
-	country_cannot_enact_laws = yes
+	############country_cannot_enact_laws = yes
 }
 
 real_union_overlord_serfdom_banned = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	state_pop_support_law_serfdom_mult = -0.3
-	state_pop_support_law_serfdom_banned_mult = 0.3
+	##########state_pop_support_law_serfdom_mult = -0.3
+	##########state_pop_support_law_serfdom_banned_mult = 0.3
 #	political_movement_radicalism_mult = 0.2
-	country_promotion_ig_attraction_mult = 0.1
-	political_movement_radicalism_mult = 0.1
-	interest_group_ig_landowners_pop_attraction_mult = -0.1
+	################country_promotion_ig_attraction_mult = 0.1
+	################political_movement_radicalism_mult = 0.1
+	################interest_group_ig_landowners_pop_attraction_mult = -0.1
 }
 
 
 real_union_overlord_serfdom_banned2 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	state_pop_support_law_serfdom_add = -5
-	state_pop_support_law_serfdom_banned_add = 5
+	###########state_pop_support_law_serfdom_add = -5
+	###########state_pop_support_law_serfdom_banned_add = 5
 }
 
 pledged_to_end_serfdom = {

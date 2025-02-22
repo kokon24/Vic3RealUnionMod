@@ -1,0 +1,24 @@
+﻿CHARACTERS = {
+	c:CPL = {
+		create_character = {
+			# Ivan Paskevich
+			is_general = yes
+			first_name = Ivan
+			last_name = Paskevich
+			historical = yes
+			culture = russian
+			ruler = yes
+			age = 54
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			hq = region_poland
+			traits = {
+				brave
+				reckless
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+	}
+}

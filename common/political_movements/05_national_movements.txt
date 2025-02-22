@@ -1,0 +1,228 @@
+﻿movement_polish_nationalist = {
+	category = movement_category_cultural
+	
+	ideology = ideology_polish_antimonarchist_revolutionary
+	character_ideologies = {
+		ideology_reformer
+		ideology_social_democrat
+		ideology_traditionalist
+		ideology_integralist
+		ideology_polish_antimonarchist_revolutionary
+	}		
+	creation_trigger = {
+		exists = c:CPL
+		c:CPL = this
+	}
+	creation_weight = {
+		value = 100
+	}		
+	on_created = {
+		#add_movement_enthusiasm_modifier = yes
+	}
+	
+	# religion_selection_trigger = {
+	# 	this = rel:catholic
+	# }
+	# religion_selection_weight = {
+	# 	value = 100
+	# }	
+	
+	character_support_trigger = {
+		#culture = {
+		#	has_discrimination_trait = south_asian_heritage
+		#}
+		culture = cu:polish
+		religion = rel:catholic
+	}
+	character_support_weight = {
+		value = 100
+		if = {
+			limit = {
+				interest_group ?= {
+					is_interest_group_type = ig_devout
+				}
+			}
+			multiply = {
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_traditionalist
+					has_ideology = ideology:ideology_theocrat
+				}
+			}
+			multiply = {
+				value = 5
+			}
+		}
+		else_if = {
+			limit = {
+				has_ideology = ideology:ideology_integralist
+			}
+			multiply = {
+				value = 2
+			}
+		}
+	}	
+	
+	pop_support_trigger = {
+		culture = cu:polish
+	}
+
+	pop_support_factors = {
+		#movement_support_high_urbanization
+		movement_support_high_literacy
+		movement_support_aristocrats
+		movement_support_academics
+		movement_support_officers
+		movement_support_clergymen
+		#movement_support_peasants
+	}
+	
+	pop_support_weight = {
+		#add = {
+		#	desc = "URBAN_STATE" # Increases support in rural states, decreases in urban
+		#	value = 0.5
+		#	subtract = state.state_urbanization_rate
+		#	multiply = 10
+		#}
+
+		add = {
+			value = 18
+			desc = "POP_BASE_SUPPORT"
+		}
+		add = {
+			value = literacy_rate
+			desc = "EDUCATION"
+			divide = 5
+		}
+		
+		if = {
+			limit = {
+				is_pop_type = clergymen
+			}
+			add = {
+				value = 15
+				desc = "POP_CLERGYMEN"
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_type = aristocrats
+			}
+			add = {
+				value = 10
+				desc = "POP_ARISTOCRATS"
+			}
+		}	
+		else_if = {
+			limit = {
+				is_pop_type = academics
+			}
+			add = {
+				value = 10
+				desc = "POP_ACADEMICS"
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_type = officers
+			}
+			add = {
+				value = 5
+				desc = "POP_ACADEMICS"
+			}
+		}	
+
+
+		#add = { # Weakened by increasing literacy rates
+		#	desc = "POP_LITERACY"
+		#	this = {
+		#		value = literacy_rate
+		#		multiply = -2
+		#	}
+		#}
+
+		if = {
+			limit = {
+				pop_acceptance < acceptance_status_5
+			}
+			add = {
+				value = 1
+				desc = "POP_PEASANTS"
+			}
+		}
+		if = {
+			limit = {
+				pop_acceptance < acceptance_status_4
+			}
+			add = {
+				value = 2
+				desc = "POP_PEASANTS"
+			}
+		}
+
+
+		if = {
+			limit = {
+				owner ?= {
+					any_political_movement = {
+						is_political_movement_type = movement_legitimist
+					}
+				}
+			}
+			multiply = {
+				value = 0.1
+			}
+		}
+	}
+	secession = {
+		possible = {
+			political_movement_support >= 0.05
+		}
+		
+		weight = {
+			value = 1000
+		}	
+	}
+	additional_radicalism_factors = {
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+		}	
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			add = {
+				desc = "LIBERTY_DESIRE"
+				value = owner.liberty_desire
+				divide = 1200
+			}
+			add = {
+				desc = "EDUCATION"
+				value = owner.literacy_rate
+				divide = 9
+			}
+			add = {
+				#value = "owner.average_sol_for_culture(cu:polish)"
+				#value = "owner.average_sol"
+				value = 0.5
+				divide = "owner.average_sol_for_culture(cu:polish)"
+				subtract = 0.05
+				#subtract = "owner.average_sol_for_culture(cu:polish)"
+				#multiply = 0.05
+				max = 0.25
+				min = 0
+				desc = "STANDARD_OF_LIVING_FOR_RELIGION"
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+﻿MILITARY_FORMATIONS = {
+	c:CPL = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_poland
+			name = Army_of_Poland
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_GREATER_POLAND
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GREATER_POLAND
+				count = 3
+			}
+		}
+	}
+}

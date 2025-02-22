@@ -1,169 +1,169 @@
-HUN = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# HUN = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "green"
-	}
-}
-HUN_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "white"
+# 		color2 = "green"
+# 	}
+# }
+# HUN_monarchy = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "green"
-	}
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "white"
+# 		color2 = "green"
+# 	}
 	
-	textured_emblem = {
-		texture = "betterah_te_coa_hungary_old.dds"
-	}
-}
-#HUN_absolute_monarchy = {
-#	pattern = "pattern_solid.tga"
-#	color1 = "red"
-#
-#	colored_emblem = {
-#		texture = "ce_tricolor_horizontal.dds"
-#		color1 = "white"
-#		color2 = "green"
-#	}
-#	
-#	textured_emblem = {
-#		texture = "betterah_te_coa_hungary.dds"
-#	}
-#}
-HUN_absolute_monarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	textured_emblem = {
+# 		texture = "betterah_te_coa_hungary_old.dds"
+# 	}
+# }
+# #HUN_absolute_monarchy = {
+# #	pattern = "pattern_solid.tga"
+# #	color1 = "red"
+# #
+# #	colored_emblem = {
+# #		texture = "ce_tricolor_horizontal.dds"
+# #		color1 = "white"
+# #		color2 = "green"
+# #	}
+# #	
+# #	textured_emblem = {
+# #		texture = "betterah_te_coa_hungary.dds"
+# #	}
+# #}
+# HUN_absolute_monarchy = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 	
-	colored_emblem = {
-		texture = "betterah_ce_cross_patriarchal.dds"
-		color1 = "white"
-	}
-	colored_emblem = {
-		texture = "betterah_ce_hills.dds"
-		color1 = "green"
-		instance = { scale = { 1.5 1 } position = { 0.5 0.5 } }
-	}
-}
-HUN_republic = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	colored_emblem = {
+# 		texture = "betterah_ce_cross_patriarchal.dds"
+# 		color1 = "white"
+# 	}
+# 	colored_emblem = {
+# 		texture = "betterah_ce_hills.dds"
+# 		color1 = "green"
+# 		instance = { scale = { 1.5 1 } position = { 0.5 0.5 } }
+# 	}
+# }
+# HUN_republic = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "green"
-	}
-}
-HUN_theocracy = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "white"
+# 		color2 = "green"
+# 	}
+# }
+# HUN_theocracy = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 	
-	colored_emblem = {
-		texture = "betterah_ce_cross_patriarchal.dds"
-		color1 = "white"
-	}
-	colored_emblem = {
-		texture = "betterah_ce_hills.dds"
-		color1 = "green"
-		instance = { scale = { 1.5 1 } position = { 0.5 0.5 } }
-	}
-}
-HUN_multicultural = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	colored_emblem = {
+# 		texture = "betterah_ce_cross_patriarchal.dds"
+# 		color1 = "white"
+# 	}
+# 	colored_emblem = {
+# 		texture = "betterah_ce_hills.dds"
+# 		color1 = "green"
+# 		instance = { scale = { 1.5 1 } position = { 0.5 0.5 } }
+# 	}
+# }
+# HUN_multicultural = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 	
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "green"
-	}
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "white"
+# 		color2 = "green"
+# 	}
 
-	textured_emblem = {
-		texture = "betterah_te_coa_hungary_multicultural.dds"
-	}
-}
-HUN_communist = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
-}
-HUN_anarchy = {
-	pattern = "pattern_solid.tga"
-	color1 = "green"
+# 	textured_emblem = {
+# 		texture = "betterah_te_coa_hungary_multicultural.dds"
+# 	}
+# }
+# HUN_communist = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
+# }
+# HUN_anarchy = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "green"
 
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "red"
-		color2 = "white"
-	}
-}
-HUN_dictatorship = {
-	pattern = "pattern_solid.tga"
-	color1 = "white"
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "red"
+# 		color2 = "white"
+# 	}
+# }
+# HUN_dictatorship = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "white"
 
-	colored_emblem = {
-		texture = "ce_stripes_07.dds"
-		color1 = "red"
-	}
-}
-HUN_state_religion = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	colored_emblem = {
+# 		texture = "ce_stripes_07.dds"
+# 		color1 = "red"
+# 	}
+# }
+# HUN_state_religion = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "green"
-	}
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "white"
+# 		color2 = "green"
+# 	}
 	
-	textured_emblem = {
-		texture = "betterah_te_coa_hungary_angels.dds"
-	}
-}
-HUN_military = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	textured_emblem = {
+# 		texture = "betterah_te_coa_hungary_angels.dds"
+# 	}
+# }
+# HUN_military = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "green"
-	}
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "white"
+# 		color2 = "green"
+# 	}
 	
-	textured_emblem = {
-		texture = "betterah_te_coa_hungary_kossuth.dds"
-	}
-}
-HUN_fascist = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	textured_emblem = {
+# 		texture = "betterah_te_coa_hungary_kossuth.dds"
+# 	}
+# }
+# HUN_fascist = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "green"
-	}
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "white"
+# 		color2 = "green"
+# 	}
 	
-	textured_emblem = {
-		texture = "te_arrows_party.dds"
-	}
-}
-HUN_revolution = {
-	pattern = "pattern_solid.tga"
-	color1 = "red"
+# 	textured_emblem = {
+# 		texture = "te_arrows_party.dds"
+# 	}
+# }
+# HUN_revolution = {
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "red"
 
-	colored_emblem = {
-		texture = "ce_tricolor_horizontal.dds"
-		color1 = "white"
-		color2 = "green"
-	}
+# 	colored_emblem = {
+# 		texture = "ce_tricolor_horizontal.dds"
+# 		color1 = "white"
+# 		color2 = "green"
+# 	}
 	
-	textured_emblem = {
-		texture = "betterah_te_coa_hungary_revolution.dds"
-	}
-}
+# 	textured_emblem = {
+# 		texture = "betterah_te_coa_hungary_revolution.dds"
+# 	}
+# }

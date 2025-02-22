@@ -26,14 +26,88 @@
 
 
 	c:CPL = {
+		ig:ig_landowners = {
+			add_modifier = {
+				name = ig_independance_desire_1
+				months = -1
+			}
+		}
+		ig:ig_devout = {
+			add_modifier = {
+				name = ig_independance_desire_1
+				months = -1
+			}
+		}
+
 		add_radicals = {
+			value = 0.21
 			culture = cu:polish
-			value = 0.20
+			pop_type = aristocrats
 		}
 		add_radicals = {
-			value = 0.70
+			value = 0.21
 			culture = cu:polish
-			strata = rich
+			pop_type = clergymen
+		}
+		add_radicals = {
+			value = 0.21
+			culture = cu:polish
+			pop_type = academics
+		}
+		add_radicals = {
+			value = 0.10
+			culture = cu:polish
+			pop_type = officers
+		}
+		add_radicals = {
+			value = 0.05
+			culture = cu:polish
+			pop_type = soldiers
+		}
+		add_radicals = {
+			value = 0.04
+			culture = cu:polish
+			pop_type = capitalists
+		}
+		add_radicals = {
+			value = 0.03
+			culture = cu:polish
+			pop_type = peasants
+		}
+		add_radicals = {
+			value = 0.03
+			culture = cu:polish
+			pop_type = bureaucrats
+		}
+		add_radicals = {
+			value = 0.03
+			culture = cu:polish
+			pop_type = machinists
+		}
+		add_radicals = {
+			value = 0.03
+			culture = cu:polish
+			pop_type = laborers
+		}
+		add_radicals = {
+			value = 0.03
+			culture = cu:polish
+			pop_type = clerks
+		}
+		add_radicals = {
+			value = 0.03
+			culture = cu:polish
+			pop_type = shopkeepers
+		}
+		add_radicals = {
+			value = 0.03
+			culture = cu:polish
+			pop_type = farmers
+		}
+		add_radicals = {
+			value = 0.03
+			culture = cu:polish
+			pop_type = engineers
 		}
 
 
@@ -44,31 +118,31 @@
 		# }
 		# # few hundred russian landowners were given lands of exiled poles + some poles accepted dvoryanstvo
 		add_loyalists = {
-			value = 0.5
+			value = 0.15
 			culture = cu:russian
 			strata = rich
 		}
 
 		every_scope_character = {
 			limit = {
-				has_ideology = ideology_royalist
+				has_ideology = ideology:ideology_royalist
 			}
 			random_list = {
-				30 ={
-					set_ideology = ideology_republican
+				50 ={
+					set_ideology = ideology:ideology_republican
 				}
 		
-				30 = {
-					set_ideology = ideology_liberal
+				50 = {
+					set_ideology = ideology:ideology_liberal
 					#add_trait = bandit
 				}
 
-				20 = {
-					set_ideology = ideology_loyalist
-				}
-				20 = {
+				# 20 = {
+				# 	set_ideology = ideology_loyalist
+				# }
+				# 20 = {
 
-				}
+				# }
 			}			
 
 			
@@ -90,9 +164,13 @@
 		# }
 	
 	}
-	# s:STATE_MAZOVIA={
-	# 	add_devastation = 5
-	# }
+#	s:STATE_MAZOVIA={
+#		add_devastation = 5
+#		add_acceptance = {
+#			target = cu:russian
+#			value = -10
+#		}
+#	}
 	# s:STATE_MAZOVIA={
 	# 	region_state:CPL={
 	# 		deactivate_building = {
@@ -100,4 +178,15 @@
 	# 		}
 	# 	}
 	# }
+
+
+	
+#	s:STATE_MAZOVIA={
+#		region_state:CPL={
+#  		add_acceptance = {
+#			target = cu:russian
+#			value = -10
+#		}
+#		}
+#	}
 }

@@ -1,12 +1,12 @@
-﻿DIPLOMACY = {
-	c:RUS = {
-		remove_diplomatic_pact = {
-			country = c:FIN
-			type = personal_union
-		}
-		create_diplomatic_pact = {
- 			country = c:FIN
- 			type = real_union
-	 	}
-	}
-}
+﻿# DIPLOMACY = {
+# 	c:RUS = {
+# 		remove_diplomatic_pact = {
+# 			country = c:FIN
+# 			type = personal_union
+# 		}
+# 		create_diplomatic_pact = {
+#  			country = c:FIN
+#  			type = real_union
+# 	 	}
+# 	}
+# }

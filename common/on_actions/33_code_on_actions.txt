@@ -21,7 +21,7 @@ on_monthly_pulse_country = {
 		    real_union_generic_laws.1
 			real_union_police_law.1
 			real_union_progressive_laws.1
-			real_union_university_warning.1
+			###real_union_university_warning.1
 		}
 	on_actions = {
 		remove_debt_modifier_monthly_pulse

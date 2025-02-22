@@ -1,56 +1,56 @@
-﻿CHARACTERS = {
-	c:HUN = {
-		create_character = {
-			# Kossuth Lajos
-			first_name = Kossuth
-			last_name = Lajos
-			ig_leader = yes
-			birth_date = 1802.9.19
-			dna = betterah_dna_kossuth
-			interest_group = ig_petty_bourgeoisie
-			ideology = ideology_radical
-			traits = {
-				ambitious
-				reckless
-				inspirational_orator
-			}
-			on_created = {
-				set_variable = is_married
-			}
-		}
+﻿# CHARACTERS = {
+# 	c:HUN = {
+# 		create_character = {
+# 			# Kossuth Lajos
+# 			first_name = Kossuth
+# 			last_name = Lajos
+# 			ig_leader = yes
+# 			birth_date = 1802.9.19
+# 			dna = betterah_dna_kossuth
+# 			interest_group = ig_petty_bourgeoisie
+# 			ideology = ideology_radical
+# 			traits = {
+# 				ambitious
+# 				reckless
+# 				inspirational_orator
+# 			}
+# 			on_created = {
+# 				set_variable = is_married
+# 			}
+# 		}
 		
-		create_character = {
-			# Széchenyi István
-			first_name = Szechenyi
-			last_name = Istvan
-			ig_leader = yes
-			birth_date = 1791.9.21
-			dna = betterah_dna_szechenyi
-			interest_group = ig_industrialists
-			ideology = ideology_reformer
-			traits = {
-				ambitious
-				cautious
-				experienced_political_operator
-			}
-		}
+# 		create_character = {
+# 			# Széchenyi István
+# 			first_name = Szechenyi
+# 			last_name = Istvan
+# 			ig_leader = yes
+# 			birth_date = 1791.9.21
+# 			dna = betterah_dna_szechenyi
+# 			interest_group = ig_industrialists
+# 			ideology = ideology_reformer
+# 			traits = {
+# 				ambitious
+# 				cautious
+# 				experienced_political_operator
+# 			}
+# 		}
 		
-		#Batthyány will be spawned when Hungary Secedes
+# 		#Batthyány will be spawned when Hungary Secedes
 		
-		create_character = { # idk, i don't know any other conservative politicians from this period
-			# Dessewffy Aurel
-			first_name = Dessewffy
-			last_name = Aurel
-			ig_leader = yes
-			birth_date = 1808.7.27
-			#dna = dna_emperor_ferdinand_01 TODO: DNA FOR Dessewffy
-			interest_group = ig_landowners
-			ideology = ideology_royalist
-			traits = {
-				cautious
-				wounded # He did not have wounds in real life, but i needed a trait that affects his health negatively since he died young
-			}
-		}
-	}
-}
+# 		create_character = { # idk, i don't know any other conservative politicians from this period
+# 			# Dessewffy Aurel
+# 			first_name = Dessewffy
+# 			last_name = Aurel
+# 			ig_leader = yes
+# 			birth_date = 1808.7.27
+# 			#dna = dna_emperor_ferdinand_01 TODO: DNA FOR Dessewffy
+# 			interest_group = ig_landowners
+# 			ideology = ideology_royalist
+# 			traits = {
+# 				cautious
+# 				wounded # He did not have wounds in real life, but i needed a trait that affects his health negatively since he died young
+# 			}
+# 		}
+# 	}
+# }
 
