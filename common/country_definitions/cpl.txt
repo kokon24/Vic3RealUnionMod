@@ -6,6 +6,6 @@
 	tier = kingdom
 	#tier = principality
 	
-	cultures = { polish }
+	cultures = { polish russian north_german }
 	capital = STATE_GREATER_POLAND
 }

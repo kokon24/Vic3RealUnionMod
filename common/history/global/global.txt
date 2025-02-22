@@ -26,31 +26,33 @@
 
 
 	c:CPL = {
-		ig:ig_landowners = {
-			add_modifier = {
-				name = ig_independance_desire_1
-				months = -1
-			}
-		}
-		ig:ig_devout = {
-			add_modifier = {
-				name = ig_independance_desire_1
-				months = -1
-			}
-		}
+		# ig:ig_landowners = {
+		# 	add_modifier = {
+		# 		name = ig_independance_desire_1
+		# 		months = -1
+		# 	}
+		# }
+		# ig:ig_devout = {
+		# 	add_modifier = {
+		# 		name = ig_independance_desire_1
+		# 		months = -1
+		# 	}
+		# }
+		remove_primary_culture = cu:polish
+		remove_primary_culture = cu:north_german
 
 		add_radicals = {
-			value = 0.21
+			value = 0.20
 			culture = cu:polish
 			pop_type = aristocrats
 		}
 		add_radicals = {
-			value = 0.21
+			value = 0.20
 			culture = cu:polish
 			pop_type = clergymen
 		}
 		add_radicals = {
-			value = 0.21
+			value = 0.20
 			culture = cu:polish
 			pop_type = academics
 		}
@@ -80,32 +82,32 @@
 			pop_type = bureaucrats
 		}
 		add_radicals = {
-			value = 0.04
+			value = 0.03
 			culture = cu:polish
 			pop_type = machinists
 		}
 		add_radicals = {
-			value = 0.04
+			value = 0.03
 			culture = cu:polish
 			pop_type = laborers
 		}
 		add_radicals = {
-			value = 0.04
+			value = 0.03
 			culture = cu:polish
 			pop_type = clerks
 		}
 		add_radicals = {
-			value = 0.04
+			value = 0.03
 			culture = cu:polish
 			pop_type = shopkeepers
 		}
 		add_radicals = {
-			value = 0.04
+			value = 0.03
 			culture = cu:polish
 			pop_type = farmers
 		}
 		add_radicals = {
-			value = 0.04
+			value = 0.03
 			culture = cu:polish
 			pop_type = engineers
 		}

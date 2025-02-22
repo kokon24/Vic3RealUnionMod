@@ -35,7 +35,7 @@
 			level = 1
 		}
 
-		#add_treasury = -20000
+		add_treasury = -20000
 		
 		#country_secession_progress_add = 30 
 
@@ -62,8 +62,9 @@
 		# 	months = 60
 		# }
 
-		add_primary_culture = cu:russian
-		remove_primary_culture = cu:polish
+		##########################################
+		# polish and german cultures are removed inside of a general script otherwise wrong pop_type counts are created
+		#############
 
 		ig:ig_landowners = { 
 			set_interest_group_name = ig_szlachta

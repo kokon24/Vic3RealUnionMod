@@ -2,24 +2,73 @@
 	s:STATE_MAZOVIA = {
 		#Mazovia - DONE
 		region_state:CPL = {
-			# few hundred russian land owners were given ~10% of lands
 			create_pop = {
 				culture = polish
-				size = 970792
+				size = 10000
+				pop_type = shopkeepers
+			}
+			create_pop = {
+				culture = polish
+				size = 8000
+				pop_type = aristocrats
+			}
+			create_pop = {
+				culture = polish
+				size = 5000
+				pop_type = farmers
+			}
+			create_pop = {
+				culture = polish
+				size = 3500
+				pop_type = machinists
+			}
+			create_pop = {
+				culture = polish
+				size = 1000
+				pop_type = clerks
+			}
+			create_pop = {
+				culture = polish
+				size = 500
+				pop_type = capitalists
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 180591
+				size = 500
+				pop_type = shopkeepers
 			}
 			create_pop = {
 				culture = north_german
-				size = 39499
+				size = 500
+				pop_type = shopkeepers
 			}
-
+			create_pop = {
+				culture = polish
+				size = 941292
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 179591
+			}
+			create_pop = {
+				culture = north_german
+				size = 38499
+			}
+			# few hundred russian land owners were given ~10% of lands
+			create_pop = {
+				culture = russian
+				size = 2000
+				pop_type = aristocrats
+			}
+			create_pop = {
+				culture = north_german
+				size = 500
+				pop_type = aristocrats
+			}
 			create_pop = {
 				culture = russian
 				pop_type = peasants
-				size = 50083
+				size = 51083
 			}
 			create_pop = {
 				culture = byelorussian
@@ -43,13 +92,7 @@
 			}
 			add_acceptance = {
 				target = cu:north_german
-				value = 10
-			}
-			create_pop = {
-				pop_type = aristocrats
-				culture = russian
-				religion = orthodox
-				size = 3000
+				value = 20
 			}
 		}
 	}
@@ -57,66 +100,98 @@
 		#Warszawa - DONE
 		region_state:CPL = {
 			create_pop = {
+				culture = ashkenazi
+				size = 500
+				pop_type = shopkeepers
+			}
+			create_pop = {
+				culture = north_german
+				size = 500
+				pop_type = aristocrats
+			}
+			create_pop = {
+				culture = north_german
+				size = 500
+				pop_type = shopkeepers
+			}
+			create_pop = {
 				culture = polish
-				size = 2004469
+				size = 3000
+				pop_type = shopkeepers
+			}
+			create_pop = {
+				culture = polish
+				pop_type = aristocrats
+				size = 18000
 			}
 			create_pop = {
 				culture = polish
 				religion = protestant
-				size = 30000
-			}
-			create_pop = {
-				culture = russian
 				pop_type = aristocrats
-				religion = orthodox
-				size = 4000
+				size = 500
 			}
 			create_pop = {
+				culture = polish
 				pop_type = bureaucrats
-				culture = russian
-				religion = orthodox
-				size = 1000
+				size = 2000
 			}
 			create_pop = {
-				pop_type = clercs
-				culture = russian
-				religion = orthodox
-				size = 3000
-			}			
+				culture = polish
+				pop_type = clerks
+				size = 25000
+			}
 			create_pop = {
-				pop_type = serviceman
+				culture = polish
+				size = 100
+				pop_type = officers
+			}
+			create_pop = {
 				culture = russian
-				religion = orthodox
-				size = 5000
+				size = 11000
+				pop_type = soldiers
+			}
+			create_pop = {
+				culture = russian
+				size = 3000
+				pop_type = laborers
+			}
+			create_pop = {
+				culture = polish
+				size = 1966369
+			}
+			create_pop = {
+				culture = polish
+				religion = protestant
+				size = 29500
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 358977
+				size = 358477
 			}
 			create_pop = {
 				culture = north_german
-				size = 134245
+				size = 133245
 			}
 			create_pop = {
 				culture = russian
-				size = 47600
+				size = 46600
 				pop_type = peasants
 			}
 			add_acceptance = {
 				target = cu:russian
 				value = -30
 			}
-			add_acceptance = {
-				target = cu:ukrainian
-				value = -20
-			}
-			add_acceptance = {
-				target = cu:byelorussian
-				value = -20
-			}
+			# add_acceptance = {
+			# 	target = cu:ukrainian
+			# 	value = -20
+			# }
+			# add_acceptance = {
+			# 	target = cu:byelorussian
+			# 	value = -20
+			# }
 			add_acceptance = {
 				target = cu:north_german
-				value = 10
+				value = 20
 			}
 		}
 	}
@@ -124,8 +199,28 @@
 		#Lublin - DONE
 		region_state:CPL = {
 			create_pop = {
+				culture = north_german
+				size = 500
+				pop_type = aristocrats
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 500
+				pop_type = shopkeepers
+			}
+			create_pop = {
+				culture = north_german
+				size = 500
+				pop_type = shopkeepers
+			}
+			create_pop = {
 				culture = polish
-				size = 633163
+				pop_type = aristocrats
+				size = 10000
+			}
+			create_pop = {
+				culture = polish
+				size = 623163
 			}
 			create_pop = {
 				culture = polish
@@ -133,18 +228,12 @@
 				size = 26000
 			}
 			create_pop = {
-				pop_type = aristocrats
-				culture = russian
-				religion = orthodox
-				size = 2000
-			}
-			create_pop = {
 				culture = ashkenazi
-				size = 117162
+				size = 116662
 			}
 			create_pop = {
 				culture = north_german
-				size = 19663
+				size = 19163
 			}
 			create_pop = {
 				culture = ukrainian
@@ -152,8 +241,7 @@
 			}
 			create_pop = {
 				culture = russian
-				size = 33435
-				pop_type = peasants
+				size = 35435
 			}
 			add_acceptance = {
 				target = cu:russian
@@ -163,13 +251,13 @@
 				target = cu:ukrainian
 				value = -20
 			}
-			add_acceptance = {
-				target = cu:byelorussian
-				value = -20
-			}
+			# add_acceptance = {
+			# 	target = cu:byelorussian
+			# 	value = -20
+			# }
 			add_acceptance = {
 				target = cu:north_german
-				value = 10
+				value = 20
 			}
 		}
 	}

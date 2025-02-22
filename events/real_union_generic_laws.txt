@@ -40,10 +40,10 @@ real_union_generic_laws.1 = {
 			}
 			triggered_desc = {
 				trigger = {
-					var:different_law_count = 2
+					var:different_law_count = 4
 					has_variable = is_friendly_overlord
 				}
-				desc = real_union_law_rebellion_flavor2friendly
+				desc = real_union_law_rebellion_flavor4friendly
 			}
 			triggered_desc = {
 				trigger = {

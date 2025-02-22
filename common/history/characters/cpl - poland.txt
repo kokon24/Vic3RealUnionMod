@@ -9,7 +9,7 @@
 			culture = russian
 			ruler = yes
 			age = 54
-			interest_group = ig_landowners
+			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			hq = region_poland
 			traits = {
