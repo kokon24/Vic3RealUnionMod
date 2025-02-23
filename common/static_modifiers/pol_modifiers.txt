@@ -1,6 +1,6 @@
 ﻿strong_independence_movement_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
-	country_legitimacy_base_add = -8
+	country_legitimacy_base_add = -7
 	#country_russians_acceptance_max_add = 80
 	#country_liberty_desire_add = 0.04
 	#polical_movement_radicalism_mult = 0.1
@@ -8,7 +8,7 @@
 	#interest_group_ig_armed_forces_approval_add = -2
 	#interest_group_ig_landowners_approval_add= -2
 	#interest_group_ig_devout_approval_add= -1
-	#state_turmoil_effects_mult = 0.05
+	state_turmoil_effects_mult = 0.1
 	#country_influence_add = -200
 	#country_bureaucracy_mult = -0.1
 	#country_authority_mult = -0.2
@@ -25,7 +25,7 @@
 polish_fortresses_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	battle_defense_owned_province_mult = 0.1
-	country_expenses_add = 2000
+	country_expenses_add = 1500
 	country_legitimacy_base_add = 4
 }
 
