@@ -47,6 +47,10 @@
 		#	name = real_union_modifier
 		#	months = -1
 		#}
+		add_modifier = {
+			name = polish_fortresses_modifier
+			months = -1
+		}
 		
 		# add_modifier = {
 		# 	name = universities_are_forbidden
